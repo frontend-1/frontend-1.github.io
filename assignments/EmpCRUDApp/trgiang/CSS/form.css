@@ -1,0 +1,161 @@
+.form {
+    background-color: #aadce9;
+    padding: 20px 0 20px 0;
+}
+.form {
+	width: 100%;
+	float: left;
+}
+.form table {
+	width: 60%;
+	float: left;
+}
+
+.form div{
+	width: 100%;
+	float: left;
+}
+.form table {
+	width: 60%;
+	float: left;
+	margin: 20px 0 20px 25%;
+	text-align: left;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form button:last-child {
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin: 20px 0 0 45%;
+	outline: none;
+	background: #6cb1e9;
+	color: #ffffff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.2em;
+	border-radius: 16px;
+	border: #aadce9;
+}
+.form button:hover {
+	filter: brightness(125%);
+	box-shadow: 0 0 5px #1f374b;
+}
+.form input {
+	border: none;
+	outline: none;
+}
+.form input[type="text"] {
+	width: 80%;
+	float: left;
+}
+.form input[type="range"] {
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+}
+.form output {
+	width: 10%;
+	float: left;
+	margin: 20px 0 0 5%;
+}
+.form p:first-child {
+	width: 20%;
+	float: left;
+	font-size: 0.5em;
+}
+
+/* ------------------------------------------------------- */
+
+.styledTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styledTable thead tr {
+    background-color: #009879;
+    color: #521616;
+    text-align: left;
+}
+
+.styledTable th,
+.styledTable td {
+    padding: 12px 15px;
+}
+
+.styledTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styledTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styledTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.deleteTable tbody tr:not(:first-child):hover {
+    background-color: #e94c4c;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteTable tbody tr:not(:first-child):active {
+    background-color: #ff4800;
+    color: white;
+    cursor: pointer;
+}
+
+.update-table tbody tr:not(:first-child):hover {
+    background-color: #31e977;
+    color: white;
+    cursor: pointer;
+}
+
+.update-table tbody tr:not(:first-child):active {
+    background-color: #00ff0d;
+    color: white;
+    cursor: pointer;
+}
+
+.styled_form {
+	background-color: #aadce9;
+	width: 100%;
+	float: left;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.styled_form button {
+	float: left;
+    background: #6cb1e9;
+    color: white;
+    border: 1px solid #6cb1e9;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font: inherit;
+    font-size: 0.7em;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.update_form {
+    width: 600px;
+}
+
+.find_form {
+    text-align: center;
+}
+
+input,
+select {
+	height: 30px;
+	border: none;
+    font-size: 0.8em;
+    color: black;
+}
+

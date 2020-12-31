@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #540075;
+}
+
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #540075;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+} */
+
+
+/* ------------------------------------------------------- */
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #521616;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.delete-table tbody tr:not(:first-child):hover {
+    background-color: #e94c4c;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-table tbody tr:not(:first-child):active {
+    background-color: #ff4800;
+    color: white;
+    cursor: pointer;
+}
+
+.update-table tbody tr:not(:first-child):hover {
+    background-color: #31e977;
+    color: white;
+    cursor: pointer;
+}
+
+.update-table tbody tr:not(:first-child):active {
+    background-color: #00ff0d;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------- */
+
+button {
+    margin: 1%;
+    background: #540075;
+    color: white;
+    border: 1px solid #540075;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background: #790fa3;
+    border-color: #790fa3;
+}
+
+#Main_button {
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    border: 5px solid;
+    border-radius: 5%;
+}
+
+#Message {
+    text-align: center;
+}
+
+#Main table {
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------------------- */
+
+.styled_form {
+    border: solid 5px;
+    border-radius: 20px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.styled_form button {
+    margin: 1%;
+    background: #540075;
+    color: white;
+    border: 1px solid #540075;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    font: inherit;
+    font-size: 0.7em;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.update_form {
+    width: 600px;
+}
+
+.find_form {
+    text-align: center;
+}
+
+input,
+select {
+    background-color: rgb(217, 222, 255);
+    font-size: 0.8em;
+    color: black;
+}
+
+
+/* --------------------------------------------------------- */

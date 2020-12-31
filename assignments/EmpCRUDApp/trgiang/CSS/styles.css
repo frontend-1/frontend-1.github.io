@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*General*/
+* {
+    box-sizing: border-box;
+}
+button, a {
+	cursor: pointer;
+}
+/* scroll Top area*/
+.upToTop {
+	width: 100%;
+	float: left;
+}
+.upToTop img {
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	position: fixed;
+	cursor: pointer;
+	border-radius: 60px;
+	background-color: #ffffff;
+}
+.upToTop img:hover {
+	filter: brightness(125%);
+	background-color: #ffffff;
+	box-shadow: 0 0 3px #2A2A2A;
+}
+
+.mainMenu {
+	width: 100%;
+	height: 300px;
+	float: left;
+	background-color: #75dac1;
+}
+.mainMenu section {
+	width: 50%;
+	height: 80%;
+	float: left;
+	margin: 1.5% 0 0 25%;
+	border-radius: 10px;
+	background-color: #a8e7d8;
+	text-align: center;
+}
+.mainMenu button {
+	outline: none;
+	border: none;
+	width: 20%;
+	height: 100px;
+	border-radius: 10px;
+	color: #2A2A2A;
+	font-size: 100%;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin: 20px 2% 0 2%;
+}
+.mainMenu button:hover {
+	color: #35cfa9;
+	background-color: #2E2E2E;
+	box-shadow: 0 0 5px #2E2E2E;
+}
+
+#message {
+	width: 100%;
+	float: left;
+	margin: 10px 0 10px 0;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/*place-holder area*/
+input {
+	height: 25px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: #2E2E2E;
+	  opacity: 1; /* Firefox */
+	font-style: italic;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	  color: #2E2E2E;
+	font-style: italic;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	  color: #2E2E2E;
+	font-style: italic;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+footer {
+	width: 100%;
+	height: 120px;
+	float: left;
+	background-color: #2E2E2E;
+	text-align: center;
+}
+footer a {
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+	text-decoration: underline;
+	font-size: 1em;
+	font-family: 'Courier New', Courier, monospace;
+	color: #EDEDED;
+}

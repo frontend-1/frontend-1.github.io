@@ -1,0 +1,17 @@
+Write a program to store the following data of an employee, including:
+a.	Name
+b.	Age
+c.	Address
+d.	Years of Experience (Limit it up to 0-2 years)
+e.	Phone number 
+f.	Email ID 
+g.	Date of Joining in the mm-dd-yyyy format
+All the above information is stored in the local storage of web browser. The programm GUI is divided into 2 regions:
+
+1.On the above region: provide necessary controls so that users can perform the following features:
+	Add a new employee.
+	Update an employee: User will select one employee from the table to update.
+	Delete an employee: User will select one employee from the table to delete.
+	Search employee by name.
+
+2. On the below region: a table displays all the information of all employees.

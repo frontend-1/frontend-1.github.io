@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="document">
+<head>
+	<meta charset="utf-8">
+	<title>User Managerment</title>
+	<link rel="icon" href="Resources/user-icon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/form.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body id="screen" onload='load()'>
+	<h1 style="text-align: center; cursor: pointer;" onClick="renderOpeningCard()">ClickMe!</h1>
+	<div class="body">
+		<div class="mainMenu">
+			<section>
+				<button type="button" id="addBtn">Add Employee</button>
+				<button type="button" id="updateBtn">Update Employee</button>
+				<button type="button" id="deleteBtn">Delete Employee</button>
+				<button type="button" id="searchBtn">Search Employee</button>
+			</section>
+		</div>
+	<p id='message'></p>
+	<section id='main'></section>
+	
+	<div class="upToTop">
+		<img onclick="topFunction()" id="topBtn" src="Resources/upBtn.svg">
+	</div>
+	<footer>
+		<a href="https://www.facebook.com/MashiMar.2001" target="_blank">Contact Me!</a>
+	</footer>
+	<script src="JS/firstLoad.js"></script>
+	<script src="JS/CRUD.js"></script>
+	<script src="JS/scripts.js"></script>
+</body>
+</html>

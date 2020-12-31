@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <section id="user-input" class="card">
+      <h1 class="card head">Add a new Employee</h1>
+      <div class="control">
+        <label for="empName">Name</label>
+        <input type="text" id="empName" />
+        <p class="errortext">Name is required.</p>
+        <label for="age">Age</label>
+        <input type="text" id="age" />
+        <p class="errortext">Age must be between 18 and 60.</p>
+        <label for="addr">Address</label>
+        <input type="text" id="addr" />
+        <p class="errortext">Address is required.</p>
+        <label for="yearExp">Years of Experience</label>
+        <input type="text" id="yearExp" />
+        <p class="errortext">Years of experience must be within 0 to 2 years.</p>
+        <label for="phoneNum">Phone Number</label>
+        <input type="text" id="phoneNum" />
+        <p class="errortext">Phone number must have 10 to 12 digits.</p>
+        <label for="email">Email ID</label>
+        <input type="text" id="email" />
+        <p class="errortext">Email is required and must be unique.</p>
+        <label for="joinDate">Date of Joining (mm-dd-yyyy)</label>
+        <input type="text" id="joinDate" />
+        <p class="errortext">Employment date must conform with the specified format.</p>
+      </div>
+
+      <button id="add-emp-btn">Add Employee</button>
+    </section>
+
+    <section id="user-delete" class="card">
+      <h1  class="card head">Delete an Employee</h1>
+      <div class="control">
+        <p>Choose an employee</p>
+        <label for="dropdown-del">Name</label>
+        <select name="empNameDel" id="dropdown-del"></select>
+      </div>
+
+      <button id="del-emp-btn">Delete Employee</button>
+    </section>
+
+    <section id="user-update" class="card">
+      <h1 class="card head">Update an Employee</h1>
+      <div class="control">
+        <p>Choose an employee</p>
+        <label for="dropdown-up">Name</label>
+        <select name="empNameUpdate" id="dropdown-up"></select>
+        <div class="control">
+          <label for="newName">Name</label>
+          <input type="text" id="newName" />
+          <p class="errortext">Name is required.</p>
+          <label for="newAge">Age</label>
+          <input type="text" id="newAge" />
+          <p class="errortext">Age must be between 18 and 60.</p>
+          <label for="newAddr">Address</label>
+          <input type="text" id="newAddr" />
+          <p class="errortext">Address is required.</p>
+          <label for="newYearExp">Years of Experience</label>
+          <input type="text" id="newYearExp" />
+          <p class="errortext">Years of experience must be within 0 to 2 years.</p>
+          <label for="newPhoneNum">Phone Number</label>
+          <input type="text" id="newPhoneNum" />
+          <p class="errortext">Phone number must have 10 to 12 digits.</p>
+          <label for="newEmail">Email ID</label>
+          <input type="text" id="newEmail" />
+          <p class="errortext">Email is required and must be unique.</p>
+          <label for="newJoinDate">Date of Joining (mm-dd-yyyy)</label>
+          <input type="text" id="newJoinDate" />
+          <p class="errortext">Employment date must conform with the specified format.</p>
+        </div>
+      </div>
+
+      <button id="update-emp-btn">Update Employee</button>
+    </section>
+
+    <section id="search" class="card">
+      <h1 class="card head">Search for Employee(s)</h1>
+      <label for="search-name">Name</label>
+      <input type="text" id="search-name" />
+      <p class="errortext">No employee with that name found.</p>
+      <button id="search-btn">Search</button>
+      <section id="src-table">
+        <br>
+        <hr></hr>
+        <table id="src-relation">
+          <tr id="src-attribute">
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Experience</th>
+            <th>Phone Number</th>
+            <th>Email ID</th>
+            <th>Join Date</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section id="save" class="card">
+      <h1>Save to local storage</h1>
+      <button id="save-btn">Save</button>
+    </section>
+
+    <section class="card" id="table">
+      <table id="relation">
+        <tr id="attribute">
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Experience</th>
+          <th>Phone Number</th>
+          <th>Email ID</th>
+          <th>Join Date</th>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
