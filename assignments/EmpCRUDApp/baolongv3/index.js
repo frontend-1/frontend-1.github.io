@@ -2,7 +2,6 @@
 
 internalStorage = window.localStorage;
 
-
 window.onload = () => {
     if(internalStorage.getItem('currentList') === null){
         internalStorage.setItem('currentList','[]');
@@ -10,6 +9,15 @@ window.onload = () => {
     loadTable();
 
 }
+
+const AlertTemplate = swal.mixin({
+    customClass : {
+        confirmButton : 'btn btn-success mr-2',
+        cancelButton : 'btn btn-danger mr-2'
+    },
+    buttonsStyling : false
+})
+
 function addData(){
 
     let data = formToJSON();
@@ -159,17 +167,87 @@ function reloadUpdateForm(){
     
 }
 
+function promptAddAlert(){
+    AlertTemplate.fire({
+        icon : 'warning',
+        title : 'Confirmation',
+        text : 'Do you want to add this employee?',
+        confirmButtonText : 'Yes',
+        showCancelButton: true,
+        cancelButtonText: 'No'
 
+    }).then((result) =>{
+        if(result.isConfirmed){
+            addData();
+            swal.fire({
+                icon : 'success',
+                title : "Success!",
+                text : 'Successfully Added Employee!'
+            }).then(() => location.reload());
+            
+        } else{
+            location.reload();
+        }
+    });
+}
 
-    function removeEmployee(){
+function promptUpdateAlert(){
+    AlertTemplate.fire({
+        icon : 'info',
+        title : 'Confirmation',
+        text : 'Do you want to update this employee?',
+        confirmButtonText : 'Yes',
+        showCancelButton: true,
+        cancelButtonText: 'No'
+
+    }).then((result) =>{
+        if(result.isConfirmed){
+            updateEmployee();
+            swal.fire({
+                icon : 'success',
+                title : "Success!",
+                text : 'Successfully Updated Employee!'
+            }).then(() => location.reload());
+            
+        } else{
+            location.reload();
+        }
+    });
+}
+
+function promptDeleteAlert(){
+    AlertTemplate.fire({
+        icon : 'error',
+        title : 'Confirmation',
+        text : 'Do you want to delete this employee?',
+        confirmButtonText : 'Yes',
+        showCancelButton: true,
+        cancelButtonText: 'No'
+
+    }).then((result) =>{
+        if(result.isConfirmed){
+            removeEmployee();
+            swal.fire({
+                icon : 'success',
+                title : "Success!",
+                text : 'Successfully Deleted Employee!'
+            }).then(() => location.reload());
+            
+            
+        }else{
+            location.reload();
+        }
+    });
+}
+
+function removeEmployee(){
         let form = document.getElementById('delete-form');
         let currentSession = JSON.parse(internalStorage.getItem('currentList'));
         let index = form.childNodes[1].childNodes[3].value;
         currentSession = currentSession.splice(index,1);
         internalStorage.setItem('currentList',JSON.stringify(currentSession));
-
         location.reload;
-    }
+}
 //Model 
 class Employee{
     constructor(name,age,address,YOE,phoneNumber,email,joinDate){
